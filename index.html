@@ -1,0 +1,39 @@
+<!Doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Form Validation</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="index.js"></script>
+
+</head>
+<body>
+	<form method="post" enctype="multipart/form-data" action="fileupload.php" id="form">
+		<h2>Form</h2>
+
+		<label for="user">Name</label>
+        <input type="text" name="username"  id="username" placeholder="Enter UserName">
+        <span id="username_err" style="color:red"></span>
+
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter Email">
+        <span id="email_err" style="color:red"></span>
+
+
+        <label for="mob">Mobile Number</label>
+        <input type="text" name="mobile" id="mobile" maxlength="10" placeholder="Enter Mobile Number">
+		<span id="mobile_err" style="color:red"></span>
+
+
+		<label for="File_Upload">Photo</label>
+        <input type="file" name="image" id="image" placeholder="Upload File">
+		<span id="file_err" style="color:red"> </span>
+
+		<button type="submit" id="submitbtn">Submit</button>
+		
+
+	</form>
+</body>
+</html
